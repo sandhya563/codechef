@@ -1,9 +1,12 @@
 user=int(input("enter the number"))
-i=2
-while i<=user:
+count=0
+i=1
+while i<user:
     if user%i==0:
-        print("not prime")
-        break
+        count=count+1
+        
     i=i+1
+if count==1:
+    print(user,"prime")
 else:
-    print("prime")
+    print(user,"not prime")
